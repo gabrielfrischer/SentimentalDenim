@@ -126,6 +126,10 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR,'static'),
 )
 
+
+MEDIA_ROOT = 'media'
+MEDIA_URL = '/media/'
+
 try:
     from local_settings import *
     print("You're in Dev Mode. Not production. Debug =",DEBUG)
